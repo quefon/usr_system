@@ -1,0 +1,185 @@
+/* min */
+@media (min-width: 576px){
+
+}
+
+@media (min-width: 768px){
+    #unit_gsr{
+        .left{
+            .form-group {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    #form-search{
+        .col-form-label{
+            flex:0 0 110px;
+        }
+    }
+}
+
+@media (min-width: 992px){
+
+    #unit_gsr{
+        .left{
+            .form-group {
+                margin-top: 40px;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1200px){
+    #unit_gsr{
+        .left{
+            .form-group {
+                margin-top: 65px;
+            }
+            #district-list{
+                padding-left: 120px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1681px){
+
+}
+
+/* max */
+@media (max-width: 1680px){
+
+}
+
+@media (max-width: 1199px){
+
+    #unit_gsr{
+        #gsr_list{
+            .item{
+                .head {
+                    .title{
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 991px){
+
+}
+
+@media (max-width: 767px){  // md
+
+    .pb-200{
+        padding-bottom: 50px !important;
+    }
+
+    #unit_gsr{
+        #gsr_search{
+            background-image: url(../img/gsr/bg_xs.png);
+            background-size: contain;
+            background-position: center bottom;
+        }
+
+        #map_taiwan, #map_county{
+            display: none;
+        }
+    }
+
+    #form-search{
+        font-size: 16px;
+        #select-county{
+            width: 100%;
+            input{
+                width: 100%;
+            }
+        }
+        .col-form-label{
+            font-size: 18px;
+            flex:0 0 95px;
+        }
+    }
+
+    #map{
+        display: none !important;
+        #icon_man, #dis_name, .icon_num{
+            display: none !important;
+        }
+    }
+    .btn{
+        width: 85px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+
+    #unit_gsr{
+        #gsr_list{
+            .item{
+                font-size: 14px;
+                padding: 10px 0;
+                border: 1px solid #81BA5E;
+                .head{
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    span{
+                        padding: 0;
+                        line-height: 30px;
+                        min-width: 100px;
+                        margin-right: 0;
+                        margin-bottom: 5px;
+                        text-align: center;
+                        &+span{
+                            margin-left: 10px;
+                        }
+                    }
+                    i{
+                        display: none;
+                    }
+                    .title{
+                        font-size: 20px;
+                    }
+                }
+
+                &.open{
+                    .head{
+                        border-bottom: 1px solid #81BA5E;
+                    }
+                    .content{
+                        font-size: 18px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                }
+            }
+            .item + .item{
+                margin-top: 30px;
+            }
+            #pages-nums {
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .radio-inline, .checkbox-inline {
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 575px){
+    #unit_gsr{
+        .left{
+            .form-group {
+                margin-top: 20px;
+            }
+        }
+    }
+
+}

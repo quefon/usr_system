@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<title>USR計畫地圖</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="http://usr.moe.gov.tw/assets/img/16x16.png">
+
+    <link rel="stylesheet" href="http://usr.moe.gov.tw/assets/css/theme.css" type="text/css">
+    <link rel="stylesheet" href="http://usr.moe.gov.tw/assets/css/font.css" type="text/css">
+    <link rel="stylesheet" href="http://usr.moe.gov.tw/assets/css/style.css" type="text/css">
+
+    <link rel="stylesheet" href="http://usr.moe.gov.tw/assets/js/slick/slick.css" type="text/css">
+    <link rel="stylesheet" href="http://usr.moe.gov.tw/assets/js/slick/slick-theme.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://usr.moe.gov.tw/assets/js/datepicker/css/bootstrap-datepicker.css" type="text/css">
+    <link rel="stylesheet" href="http://usr.moe.gov.tw/assets/js/wow/animate.css" type="text/css">
+    <script type="text/javascript" src="http://usr.moe.gov.tw/assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="http://usr.moe.gov.tw/assets/js/paging.js"></script>
+
+
+</head>
+<body class="">
+
+    <div id="warper">
+
+        <!-- header -->
+        <div id="header" class="fixed-top">
+            <div class="py-3 container-xl d-flex justify-content-between align-items-center align-items-xl-end">
+
+                <!-- logo -->
+                <div id="logo">
+                    <a href="/"><img src="http://usr.moe.gov.tw/assets/img/logo.png" alt="USR LOGO" class="img-fluid"></a>
+                </div>
+                <!-- //logo -->
+               <div id="nav_menu" class="">
+                    <ul class="d-xl-flex justify-content-xl-between">
+                        <li class="sub">
+                           <a href="/about-3.php">關於我們</a>
+                            <ul class="sub_menu">
+                                <li><a href="/about-1.php">中心團隊</a></li>
+                                <li><a href="/about-2.php">關於計畫</a></li>
+                                <li><a href="/about-3.php">組織架構</a></li>
+                                <li><a href="/report.php">媒體報導</a></li>
+
+                            </ul>
+                        </li>
+                        <li class=""><a href="/usr_blog.php">USR部落格</a></li>
+                        <li class=""><a href="/social.php">互動平台</a></li>
+                        <li class=""><a href="/news.php">活動資訊</a></li>
+                        <li class="sub"><a href="#">計畫公告</a>
+                          <ul class="sub_menu">
+                              <li><a href="/plan.php">計畫公告</a></li>
+                              <li><a href="https://apply-usr.org/login" target="_blank">徵件平台</a></li>
+                          </ul>
+                        </li>
+                        <li class="active"><a href="/gsr/gsr.html">計畫地圖</a></li>
+                        <li class="sub">
+                            <a href="#">博覽會</a>
+                            <ul class="sub_menu">
+                                <li><a href="https://usrexpo.tca.org.tw/index.php">2019博覽會</a></li>
+                                <li><a href="/expo_online.php">線上策展</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class=""><a href="http://usr.moe.gov.tw:8080">行事曆</a></li>
+                        <li class=""><a href="/qa.php">FAQ</a></li>
+
+                        <!-- show on mobile -->
+                        <!-- //show on mobile -->
+
+                    </ul>
+                </div>
+                <!-- //menu -->
+
+                <!-- icon -->
+                <div id="social" class="d-none d-xl-flex justify-content-xl-end">
+
+                     <a href="http://usr.moe.gov.tw/pub.php" title="計畫書公開資訊" class="ml-2"><i class="fas fa-book"></i></a>
+                    <a href="http://usr.moe.gov.tw:8080/dashboard/signin" title="單一帳號登入" class="ml-2"><i class="fas fa-user"></i></a>
+                    <a href="https://www.facebook.com/usrmoetw/" title="FB連結" class="ml-2"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <!-- //icon -->
+
+                <!-- -->
+                <div id="smenu-toggler" class="d-block d-xl-none">
+                    <div class="hamburger hamburger--elastic mr-2" data-toggle="collapse" data-target="#nav_menu_mb">
+                      <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                      </div>
+                    </div>
+                </div>
+                <!-- -->
+            </div>
+
+            <div id="mega_menu">
+
+            </div>
+        </div>
+
+
+                <!-- menu -->
+        <!-- //#header -->
+
+        <!-- #mainer -->
+        <div id="mainer">
+
+<!-- //////////////////////////////////////////////////// -->
+
+            <link rel="stylesheet" href="assets/css/gsr.css" type="text/css">
+            <script type="text/javascript" src="assets/js/gsr.js"></script>
+
+            <div id="unit_gsr">
+
+                <div id="gsr_search" class="pt-200 pb-200">
+                    <div class="container-xl">
+                        <div class="row">
+                            <!-- left -->
+                            <div class="col-12 col-lg-6 left">
+
+                                <form action="" method="post" id="form-search">
+                                    <div>請使用下列選擇器搜尋並查看各地區之大專院校計畫書詳情 :</div>
+
+                                    <div class="form-group d-flex">
+                                        <label class="col-form-label">選擇地區：</label>
+
+                                        <div id="select-county">
+                                            <input type="text" name="county" value="" class="form-control radius" placeholder="請選擇地區">
+                                            <i class="fas fa-angle-down"></i>
+                                            <ul></ul>
+                                        </div>
+                                    </div>
+
+                                    <div id="district-list"></div>
+
+
+                                    <div class="form-group d-flex">
+                                        <label class="col-form-label">議題分類：</label>
+                                        <div id="topic-radios">
+                                            <div class="checkbox-inline">
+                                                <input class="magic-checkbox" type="checkbox" name="topic[]" id="topic1" value="A">
+                                                <label for="topic1">種子</label>
+                                            </div>
+                                            <div class="checkbox-inline">
+                                                <input class="magic-checkbox" type="checkbox" name="topic[]" id="topic2" value="B">
+                                                <label for="topic2">萌芽</label>
+                                            </div>
+                                            <div class="checkbox-inline">
+                                                <input class="magic-checkbox" type="checkbox" name="topic[]" id="topic3" value="C">
+                                                <label for="topic3">深耕</label>
+                                            </div>
+                                        </div>
+                                    </div>
+									<!--
+                                    <div class="form-group d-flex">
+                                        <label class="col-form-label">選擇學校：</label>
+                                        <div id="school-radios">
+                                            <div class="icon-search w-100">
+                                                <input class="magic-checkbox" type="checkbox" name="school[]" id="school1" value="1">
+                                            </div>
+                                        </div>
+                                    </div>-->
+									
+									<div class="form-group d-flex">
+                                        <label class="col-form-label">學校名稱：</label>
+                                        <div class="icon-search w-100">
+                                            <input type="text" name="school" class="form-control radius" placeholder="請輸入學校名稱">
+                                            <i class="fas fa-search"></i>
+                                        </div>
+
+                                    </div>
+									
+                                     <div class="form-group d-flex">
+                                        <label class="col-form-label">計畫名稱：</label>
+                                        <div class="icon-search w-100">
+                                            <input type="text" name="project" class="form-control radius" placeholder="請輸入計畫名稱">
+                                            <i class="fas fa-search"></i>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-group text-right">
+                                        <button type="submit" class="btn btn-gsr-submit" onclick="showup()">確認送出</button>
+                                        <button type="button" class="btn btn-gsr-reset" onclick="location.reload();">清除重填</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- right -->
+                            <div class="col-12 col-lg-6 right">
+                                <div id="map">
+                                    <img id="map_taiwan" class="svg" src="assets/img/gsr/taiwan.svg">
+                                    <img id="icon_man" class="bounce" src="assets/img/gsr/icon/01.png">
+                                    <div id="dis_name"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- search list -->
+                <div id="gsr_list" hidden>
+                    <div class="container-xl" >
+
+                        <div id="pages-nums">搜尋結果：共 <span>4</span> 筆</div>
+
+
+                        <div id="items">
+
+                            <!-- item1 -->
+                            <div class="item">
+                                <div class="head">
+                                    <span class="zone">台南市永康區</span>
+                                    <span class="school">崑山科技大學</span>
+                                    <span class="category bg-1">在地關懷</span>
+                                    <div class="title">計畫名稱：共好走在我的身邊成為我的夥伴</div>
+                                    <i class="fas fa-angle-down ml-auto"></i>
+                                </div>
+                                <div class="content">
+                                    <p style="color: #81BA5E">計畫摘要</p>
+                                    <p>近年來食安問題頻仍，無論是農產品受汙染或養殖魚貝大量死亡等危機，彰化縣農漁業、養殖、食品產業皆無一倖免，從環境汙染到用藥不當，造成台灣民眾對於彰化縣各類產品失去信心。而養殖文蛤大量死亡、超抽地下水養殖使得地層下陷、環境變遷造成養殖條件惡化，更使傳統養殖產業快速凋敝，漁村勞動力老化人口外移，社區發展停滯不前。為促進全民健康與環境安全，確保農漁產品品質，提升產業倫理和環境保育素養，維護優質養殖環境，提升在地農漁特產價值，結合漁村生態文化旅遊，協助在地農漁村休閒觀光轉型，國立彰化師範大學以通識和跨領域專業的課程與研究，由教師引領修課學生與研究生進行實地探訪、議題探究，再透過環境教育中心串聯系所院校，與養殖業者、在地居民和社區團體共同攜手合作，發掘並解決在地重要議題，建立在地養殖與環境問題解決網絡，舉辦在地議題相關環境安全保育活動，維護生活和生產環境品質與健康，建立管理者、農漁民與全民永續環境安全和觀念，深耕本校師生瞭解、關心、探究和參與解決地方議題，並藉此培育相關產業與技術人才，發展本校在地特色議題之教學和研究能量，期實踐教育深耕、環境排毒、產業重生之任務，構築安居樂業的幸福芳苑。</p>
+                                    <p>計畫主持人： ｘｘｘ   |   單位及職稱 :  人文社會學院計畫專任助理   |   電話 :  02-xxxx-xxxx   |    電子信箱 : xxxx@gmail.com</p>
+                                    <a href="#"><i class="fas fa-download"></i>點擊下載計畫書</a>
+                                </div>
+                            </div>
+
+                            <!-- item2 -->
+                            <div class="item">
+                                <div class="head">
+                                    <span class="zone">台南市永康區</span>
+                                    <span class="school">崑山科技大學</span>
+                                    <span class="category bg-2">產業鏈結</span>
+                                    <div class="title">計畫名稱：共好走在我的身邊成為我的夥伴</div>
+                                    <i class="fas fa-angle-down ml-auto"></i>
+                                </div>
+                                <div class="content">
+                                    <p>近年來食安問題頻仍，無論是農產品受汙染或養殖魚貝大量死亡等危機，彰化縣農漁業、養殖、食品產業皆無一倖免，從環境汙染到用藥不當，造成台灣民眾對於彰化縣各類產品失去信心...</p>
+                                </div>
+
+                            </div>
+
+                            <!-- item3 -->
+                            <div class="item">
+                                <div class="head">
+                                    <!--<span class="zone">台南市永康區</span>-->
+                                    <span class="school">南台科技大學</span>
+                                    <span class="category bg-3">永續環境</span>
+                                    <div class="title">計畫名稱：共好走在我的身邊成為我的夥伴</div>
+                                    <i class="fas fa-angle-down ml-auto"></i>
+                                </div>
+                                <div class="content">
+                                    <p>近年來食安問題頻仍，無論是農產品受汙染或養殖魚貝大量死亡等危機，彰化縣農漁業、養殖、食品產業皆無一倖免，從環境汙染到用藥不當，造成台灣民眾對於彰化縣各類產品失去信心.....</p>
+                                </div>
+
+                            </div>
+
+                            <!-- item4 -->
+                            <div class="item">
+                                <div class="head">
+                                    <!--<span class="zone">台南市永康區</span>-->
+                                    <span class="school">南台科技大學</span>
+                                    <span class="category bg-4">食品安全與長期照護</span>
+                                    <div class="title">計畫名稱：共好走在我的身邊成為我的夥伴</div>
+                                    <i class="fas fa-angle-down ml-auto"></i>
+                                </div>
+                                <div class="content">
+                                    <p>近年來食安問題頻仍，無論是農產品受汙染或養殖魚貝大量死亡等危機，彰化縣農漁業、養殖、食品產業皆無一倖免，從環境汙染到用藥不當，造成台灣民眾對於彰化縣各類產品失去信心......</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="d-block d-md-none text-center mt-3">
+                            <a href="#mainer" class="goto">返回最上層</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+<!-- //////////////////////////////////////////////////// -->
+        </div>
+        <!--//#mainer -->
+
+        <!-- footer -->
+        <div id="footer">
+            <div class="container-xl">
+                <!-- menu -->
+                <div id="foot_menu" class="d-none d-lg-block">
+                    <ul class="d-lg-flex justify-content-between">
+                        <li><a href="#" class="ft-30">關於我們</a>
+                            <ul>
+                                <li><a href="/about-1.php">中心團隊</a></li>
+                                <li><a href="/about-2.php">關於計畫</a></li>
+                                <li><a href="/about-3.php">組織架構</a></li>
+                                <li><a href="/report.php">媒體報導</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="/report.php" class="ft-30">媒體報導</a></li>
+                        <li><a href="/news.php" class="ft-30">活動資訊</a></li>
+                        <li><a href="/plan.php" class="ft-30">計畫公告</a></li>
+                        <li><a href="/file.php" class="ft-30">檔案下載</a></li>
+                        <li><a href="http://usrexpo.tca.org.tw/index.php" class="ft-30">博覽會</a></li>
+<!--
+                        <li><a href="#" class="ft-30">博覽會</a>
+                            <ul>
+                                <li><a class="smooth" href="/expo.php#expo_book">學校參展手冊</a></li>
+                                <li><a class="smooth" href="/expo.php#expo_list">博覽會參展名單</a></li>
+                                <li><a class="smooth" href="/expo.php#expo_sel">B類競展獲選名單</a></li>
+                                <li><a class="smooth" href="/expo.php#expo_link">博覽會連結</a></li>
+                            </ul>
+                        </li>
+
+--!>
+                        <li><a href="http://usr.moe.gov.tw:8080/" class="ft-30">行事曆</a></li>
+                        <li><a href="/qa.php" class="ft-30">FAQ</a></li>
+                        <li><a href="/link.php" class="ft-30">友站連結</a></li>
+                    </ul>
+                </div>
+                <!-- // menu -->
+
+                <hr class="d-none d-lg-block">
+
+                <!-- address zone -->
+                <div id="foot_info" class="d-lg-flex justify-content-between">
+                    <div class="logo mb-3">
+                        <img src="http://usr.moe.gov.tw/assets/img/icon_edu.png" alt="icon_edu" >
+                    </div>
+                    <div class="info mb-3 pl-lg-3 ml-xl-5 pl-xl-4 d-flex justify-content-between flex-column">
+                        <p>教育部大學社會責任推動中心 版權所有, 2018 All Rights Reserved  網站建置日期：2018/3/22<br>
+                       	聯絡地址：701 臺南市東區大學路1號 國立成功大學<br>
+                        聯絡資訊：總辦專線 (06)2090300、(06)2757575轉62522(台中以南及澎湖)；北辦專線(02)33662983(苗栗以北、東部及金馬)<br>
+                        E-mail: <a href="mailto:usr.moe.tw@gmail.com">usr.moe.tw@gmail.com</a>
+			</p>
+                    </div>
+                    <div class="count mb-lg-3 ml-auto text-center text-lg-right d-flex justify-content-center align-items-end"><span class="">累計瀏覽人次：277099</span></div>
+                </div>
+                <!-- // address zone-->
+
+            </div>
+        </div>
+        <!-- #footer -->
+
+    </div><!-- //#warper -->
+
+    <!-- plugin js -->
+    <script type="text/javascript" src="http://usr.moe.gov.tw/assets/js/slick/slick.min.js"></script>
+    <script type="text/javascript" src="http://usr.moe.gov.tw/assets/js/datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="http://usr.moe.gov.tw/assets/js/datepicker/locales/bootstrap-datepicker.zh-TW.min.js"></script>
+    <script type="text/javascript" src="http://usr.moe.gov.tw/assets/js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="http://usr.moe.gov.tw/assets/js/wow/wow.min.js"></script>
+    <script type="text/javascript" src="http://usr.moe.gov.tw/assets/js/common.js"></script>
+    <!-- // plugin js -->
+</body>
+</html>

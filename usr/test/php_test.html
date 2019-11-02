@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>php_test</title>
+	</head>
+	<body>
+		<form action="php_test.php" method="post">
+			country: <input type="text" name="county">
+			district: <input type="text" name="dist">
+			type:
+				<input class="magic-checkbox" type="checkbox" name="topic[]" value="A">
+
+				<input class="magic-checkbox" type="checkbox" name="topic[]" value="B">
+
+				<input class="magic-checkbox" type="checkbox" name="topic[]" value="C">
+			school: <input type="text" name="school">
+			project: <input type="text" name="project">
+				<button type="submit" class="btn btn-gsr-submit" onclick="showup()">確認送出</button>
+				<button type="button" class="btn btn-gsr-reset" onclick="location.reload();">清除重填</button>
+		</form>
+	</body>
+</html>

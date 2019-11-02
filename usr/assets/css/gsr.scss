@@ -1,0 +1,318 @@
+#unit_gsr{
+
+    #gsr_search{
+        background: url(../img/gsr/bg.jpg) no-repeat center top;
+        background-size: 2560px;
+        background-color: #81BA5E;
+        color: #fff;
+    }
+    .left{
+
+        .form-group{
+
+            select{
+                width: 150px;
+            }
+
+            select.arrow {
+              appearance: none;
+              -moz-appearance: none;
+              -webkit-appearance: none;
+            }
+
+            #topic-radios,#school-radios{
+                padding-top: calc(0.375rem + 1px);
+            }
+
+            .icon-search{
+                position: relative;
+                i{
+                    position: absolute;
+                    color: #81BA5E;
+                    right: 10px;
+                    top: 9px;
+                }
+            }
+
+        }
+
+        #district-list{
+
+            ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+        }
+    }
+
+    .right{
+
+        #map{
+            position: relative;
+            max-width: 720px;
+            margin-left: auto;
+            margin-right: auto;
+            svg{
+                max-height: 900px;
+            }
+        }
+
+    }
+
+
+    #map_taiwan{
+        filter:drop-shadow(2px 2px 3px rgba(26,58,70,0.7));
+        .county:hover, .active{
+            fill:#E5E5E5;
+            cursor: pointer;
+        }
+    }
+
+    #map_county{
+        filter:drop-shadow(2px 2px 3px rgba(26,58,70,0.7));
+        .town:hover, .active{
+            fill:#E5E5E5;
+            cursor: pointer;
+        }
+    }
+
+    #icon_man{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 3;
+        pointer-events: none;
+    }
+
+    .icon_num{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        cursor: pointer;
+        pointer-events: none;
+        path{
+            fill: #fff;
+            stroke:#eee;
+        }
+        text{
+            font-size: 16px;
+            font-weight: 600;
+            fill: #E9AC4C;
+        }
+    }
+
+
+    .icon_num.active{
+        z-index: 3;
+        path{
+            fill: #E9AC4C;
+        }
+        text{
+            fill: #fff;
+        }
+    }
+
+    #gsr_list{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        #pages-nums{
+            color: #81BA5E;
+            margin-bottom: 50px;
+        }
+        .item{
+            padding-bottom: 15px;
+            border-bottom: 1px solid #707070;
+
+            &+.item{
+                margin-top: 60px;
+            }
+
+            .head{
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
+                flex-wrap: wrap;
+                cursor: pointer;
+                span{
+                    padding: 0 15px;
+                    border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    -webkit-border-radius: 3px;
+                    margin-right: 30px;
+                    line-height: 50px;
+
+                    &.bg-1{
+                        background-color: #A59C41;
+                    }
+                    &.bg-2{
+                        background-color: #327E7C;
+                    }
+                    &.bg-3{
+                        background-color: #55A568;
+                    }
+                    &.bg-4{
+                        background-color: #AC8F6F;
+                    }
+
+                }
+                .zone{
+                    color: #fff;
+                    background-color: #81BA5E
+                }
+                .school{
+                    border: 1px solid #81BA5E;
+                    color: #81BA5E;
+                }
+                .category{
+                    color: #fff;
+                }
+                .title{
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+                i{
+                    color: #81B95F;
+                }
+            }
+            .content{
+                display: none;
+                padding-top: 30px;
+                text-align: justify;
+                a{
+                    color: #81BA5E;
+                }
+            }
+        }
+
+        .item.open{
+            .head{
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 15px;
+            }
+            .content{
+                display: block;
+            }
+        }
+    }
+}
+
+#select-county{
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+    width: auto;
+
+    input{
+        width: 180px;
+        cursor: pointer;
+        border-bottom: 1px solid #81BA5E;
+    }
+    i{
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        color: #81BA5E;
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    ul{
+        list-style: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        background-color: #fff;
+        color: #333;
+        max-height: 400px;
+        overflow-y: scroll;
+        display: none;
+        li{
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        li:hover, li.active{
+            color: #fff;
+            background-color: #9CCA97;
+        }
+    }
+    &.open{
+
+        .fa-angle-down:before{
+            content: "\f106";
+        }
+        ul{
+           display: block;
+        }
+    }
+}
+
+
+svg#map_county{
+    path.town{
+        fill:#9CCA97;
+        stroke:#ffffff;
+        stroke-width:1.5;
+        stroke-linecap:round;
+        stroke-linejoin:round;
+    }
+}
+
+
+
+.btn-gsr-submit, .btn-gsr-reset{
+    font-size: 20px;
+    background-color: #ffffff;
+    color: #81B95F;
+    &:hover{
+        background-color: #81B95F;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+    }
+}
+
+.radio-inline, .checkbox-inline{
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    label{
+        margin-bottom: 0;
+    }
+}
+
+.radius{
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+#dis_name{
+    border: 2px solid #E9AC4C;
+    background-color: #fff;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #666;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 110px;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    display: none;
+    z-index: 2;
+}
+
+.goto{
+    color: #81BA5E;
+    text-decoration: underline;
+}
+
+@import "magic-check/magic-check";
+
+@import "response";

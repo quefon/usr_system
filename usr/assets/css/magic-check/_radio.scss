@@ -1,0 +1,30 @@
+.magic-radio + label {
+    line-height: $magic-radio-size + 2 ;
+    &:before {
+        border-radius: 50%;
+        background-color: $magic-main-bg-color;
+    }
+    &:after {
+        top: 6px;
+        left: 6px;
+        width: $magic-dot-size;
+        height: $magic-dot-size;
+        border-radius: 50%;
+        background: $magic-main-color;
+    }
+}
+
+.magic-radio:checked + label {
+    &:before {
+        border: 1px solid $magic-main-color;
+        background-color: $magic-main-bg-color;
+    }
+}
+.magic-radio:checked[disabled] + label {
+    &:before {
+        border: 1px solid $magic-disabled-checked-color;
+    }
+    &:after {
+        background: $magic-disabled-checked-color;
+    }
+}
